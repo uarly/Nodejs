@@ -16,7 +16,7 @@ inquirer
     },      {
         type:"input",
         message:"Enter Instalation Instructions",
-        name: "instalation"
+        name: "installation"
     },      {
         type:"input",
         message:"Enter Testing Instructions",
@@ -48,6 +48,55 @@ inquirer
   ]).then(function(answers){
     
     console.log(answers)
+
+    var readmetext = `
+# Project: ${answers.title}
+
+## DEveloper: ${answers.developer}
+
+### Profile: 
+![Developer Profile](https://github.com/${answers.github})
+
+## Table of Contents
+
+* [Test](#test)
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Questions](#questions)
+
+
+
+#### Test
+
+${answers.testing}
+
+#### Installation
+
+${answers.installation}
+
+#### Usage
+
+${answers.usage}
+
+#### License
+
+
+${answers.license}
+![Github License](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+
+#### Questions
+
+Please feel free to reach out to me at ${answers.email}
+
+
+`
+
+console.log(readmetext)
   })
   .catch(error => {
     if (error) throw error;
