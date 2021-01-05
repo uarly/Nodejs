@@ -97,6 +97,11 @@ Please feel free to reach out to me at ${answers.email}
 `
 
 console.log(readmetext)
+
+fs.writeFileSync("./README.md",readmetext, function(error){
+    if (error) throw error;
+    console.log("File Generated")
+})
   })
   .catch(error => {
     if (error) throw error;
