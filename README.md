@@ -1,10 +1,10 @@
 
-# Project: kf
+# Project: README Generator
 
-## DEveloper: lf
+## DEveloper: Arlette Umuhoza
 
 ### Profile: 
-![Developer Profile](https://github.com/lf)
+![Developer Profile](https://github.com/arlyu)
 
 ## Table of Contents
 
@@ -22,15 +22,15 @@
 
 #### Test
 
-lf
+Manual
 
 #### Installation
 
-kf
+npm i
 
 #### Usage
 
-lf
+Free
 
 #### License
 
@@ -40,6 +40,6 @@ MIT
 
 #### Questions
 
-Please feel free to reach out to me at lf
+Please feel free to reach out to me at arlyumuhoza@gmail.com
 
 
